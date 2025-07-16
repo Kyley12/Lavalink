@@ -1,14 +1,27 @@
-spring:
-  application:
-    version: "1.0"
-    formatted-version: "(v1.0)"
-    name: "Lavalink"
-  cloud:
-    config:
-      enabled: false
 server:
-  error:
-    include-message: ALWAYS
-    include-binding-errors: ALWAYS
-    include-stacktrace: ON_PARAM
-    include-exception: false
+  port: 2333
+  address: 0.0.0.0 # Railway 외부 접근 허용
+
+lavalink:
+  server:
+    password: YOUR_PASSWORD_HERE # 봇에서 사용할 Lavalink 비밀번호
+    sources:
+      youtube: true
+      bandcamp: true
+      soundcloud: true
+      twitch: true
+      vimeo: true
+      http: true
+    bufferDurationMs: 400
+    youtubePlaylistLoadLimit: 6
+    playerUpdateInterval: 5
+    youtubeSearchEnabled: true
+    gc-warnings: true
+
+logging:
+  file:
+    path: ./logs/
+  level:
+    root: INFO
+    lavalink: INFO
+
