@@ -4,7 +4,7 @@ server:
 
 lavalink:
   server:
-    password: YOUR_PASSWORD_HERE # 봇에서 사용할 Lavalink 비밀번호
+    password: youshallnotpass
     sources:
       youtube: true
       bandcamp: true
